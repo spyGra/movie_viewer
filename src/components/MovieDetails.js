@@ -26,6 +26,7 @@ const MovieDetails = ({selectedMovieId}) => {
                 {movieDetails.poster_path && <img width={200} height={200} src={imageBaseUrl + movieDetails.poster_path}/>}
                 <span className={'movie-details-overview'}>{movieDetails?.overview}</span>
             </div>
+            <span style={{alignSelf:'flex-end'}}>Rating: {movieDetails?.vote_average}</span>
 
         </div>
     );
